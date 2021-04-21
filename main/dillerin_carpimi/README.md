@@ -8,7 +8,7 @@ Bu programın 2 fonksiyonu vardır. İlk fonksiyonu, 2 dil'i birbiri ile çarpı
     Liste2'i girin: a,b
     Sonuç:  ['aa', 'ab', 'aba', 'abb']
 
-İkinci fonksiyonu ise, girdiğiniz iki liste farklımı aynımı size söyler. Örnek:
+İkinci fonksiyonu ise, girdiğiniz iki dize kümesi farklımı aynımı size söyler. Örnek:
 
     Liste1'i girin: aa,bb,cc
     Liste2'i girin: cc,aa,bb
@@ -46,7 +46,7 @@ Gördüğünüz gibi `ab` ve `bab` dizeleri basıldı. `Λ` işaretini listenin 
     Sonuç:  ['b', '', 'a', 'ab', 'a', 'aa', 'bab', 'ba', 'baa']
 Yukarıdaki çıktıda 2. eleman `''` şeklindedir. Bunun anlamı orada `Λ` vardır.
 ## Dil Listelerini Karşılaştır Nasıl Çalışır?
-Basit bir kullanımı var. Liste1 ve Liste2'ye dil'leri giriyorsunuz ve program size aynı olup olmadığını söylüyor. Bu kısım, işlemlerinizin doğru olup olmadığını kontrol etmenize yardımcı olur. Örnek:
+Basit bir kullanımı var. Liste1 ve Liste2'ye karşılaştırmak istediğiniz dize kümelerini giriyorsunuz ve program size aynı olup olmadıklarını söylüyor. Örnek:
 
     Liste1'i girin: aa,bb,cc
 	Liste2'i girin: cc,aa,bb
