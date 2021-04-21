@@ -59,3 +59,5 @@ Basit bir kullanımı var. Liste1 ve Liste2'ye karşılaştırmak istediğiniz d
 	Bu listeler aynı değil!
 
 **Unutmayın, siz programı kapatmadan program çalışmayı sonlandırmaz.**
+
+Not: Programı yeterince test etmediğimi belirteyim. Bu yüzden herhangi bir sorundan sorumlu değilim.
