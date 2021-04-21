@@ -22,7 +22,7 @@ Bu programın 2 fonksiyonu vardır. İlk fonksiyonu, 2 dil'i birbiri ile çarpı
 
 Dil'leri (Listeleri) girerken, hangi dil'i hangi listeye girdiğinize dikkat ediniz.
 ## İki Dil'i Birbiriyle Çarp Nasıl Çalışır?
-Program sizden 2 input değeri isteyecektir. Bu değerlerden birisi 1. listeye, diğeri 2. listeye aittir. `L = { a, ab }` gibi bir dil'i, `a,ab` şeklinde input edeceksiniz. her bir dizeyi virgülle ayırmayı unutmayın ve virgülden sonra boşluk bırakmamaya dikkat edin. İki input değerini de girdikten sonra program sizin için iki dil'i çarpacak ve sonucu ekrana bastıracak. Örneğin:
+Program sizden 2 input değeri isteyecektir. Bu değerlerden ilki 1. listeye, ikincisi 2. listeye aittir. `L = { a, ab }` gibi bir dil'i, `a,ab` şeklinde yazmalısınız. Her bir dizeyi virgülle ayırmayı unutmayın ve virgülden sonra boşluk bırakmamaya dikkat edin. İki input değerini de girdikten sonra program sizin için iki dil'i çarpacak ve sonucu ekrana bastıracak. Örneğin:
 
     Liste1'i girin: a,ab
     Liste2'i girin: a,b
@@ -32,12 +32,14 @@ Burada dikkat edilmesi gereken şey, boş dizeyi ifade eden `Λ` işaretini nas�
     Liste1'i girin: a,ab,
     Liste2'i girin: b,a
     Sonuç:  ['ab', 'aa', 'abb', 'aba', 'b', 'a']
-Liste1 inputunda görüldüğü gibi `a` ve `ab` dizelerini girdikten sonra bir adet virgül daha koyuyoruz ve sonra bir şey yazmıyoruz. Bu işlem, programa,  orada bir `Λ` olduğunu söylemiş oluyor. Bu işareti, dil'in başında ortasında ya da sonunda kullanabilmek için tek yapmanız gereken 2 virgül arasını boş bırakmak. Örnek:
+Liste1 inputunda görüldüğü gibi `a` ve `ab` dizelerini girdikten sonra bir adet virgül daha koyuyoruz ve sonra bir şey yazmıyoruz. Bu işlem, programa, `ab` dizesinden sonra bir `Λ` olduğunu söylemiş oluyor. Bu işareti, dil'in ortasında kullanabilmek için tek yapmanız gereken iki virgül arasını boş bırakmak. Örnek:
 
     Liste1'i girin: a,,b
     Liste2'i girin: ab,bab
     Sonuç:  ['aab', 'abab', 'ab', 'bab', 'bab', 'bbab']
-Gördüğünüz gibi `ab` ve `bab` dizeleri basıldı. Ama iki dil'de de `Λ` işareti varsa ve bu dil'leri çarparsak, çıkan sonuçta da `Λ` işareti olması gerekir. Bunu anlayabilmek için boş stringlere bakacağız. yani `''` bunlara:
+Gördüğünüz gibi `ab` ve `bab` dizeleri basıldı. `Λ` işaretini listenin başında kullanmak istiyorsanız `,b,ab` gibi bir tanımlama yapmanız yeterlidir.
+
+İki dil'de de `Λ` işareti varsa ve bu dil'leri çarparsak, çıkan sonuçta da `Λ` işareti olması gerekir. Bunu anlayabilmek için boş stringlere bakacağız. yani `''` bunlara:
 
     Liste1'i girin: ,a,ba
     Liste2'i girin: b,,a
