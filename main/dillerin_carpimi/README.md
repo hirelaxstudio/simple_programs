@@ -20,7 +20,7 @@ Bu programın 2 fonksiyonu vardır. İlk fonksiyonu, 2 dil'i birbiri ile çarpı
 
 	Bu listeler aynı değil!
 
-Dil'lerin öncelik sırasına dikkat ediniz.
+Dil'leri (Listeleri) girerken, hangi dil'i hangi listeye girdiğinize dikkat ediniz.
 ## İki Dil'i Birbiriyle Çarp Nasıl Çalışır?
 Program sizden 2 input değeri isteyecektir. Bu değerlerden birisi 1. listeye, diğeri 2. listeye aittir. `L = { a, ab }` gibi bir dil'i, `a,ab` şeklinde input edeceksiniz. her bir dizeyi virgülle ayırmayı unutmayın ve virgülden sonra boşluk bırakmamaya dikkat edin. İki input değerini de girdikten sonra program sizin için iki dil'i çarpacak ve sonucu ekrana bastıracak. Örneğin:
 
