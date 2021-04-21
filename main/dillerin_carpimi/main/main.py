@@ -1,3 +1,5 @@
+from os import system
+
 def carpim (p1, p2):
     p3 = list()
     for i in p1:
@@ -32,37 +34,37 @@ while True:
         continue
 
     if secim == 1:
-        print("\n----------------------------------------------------------------------------------\n\n-----------------------------------------")
+        system("cls")
+        print("\n-----------------------------------------")
         print("Çıkmak için herhangi bir listeye xxx yazın.")
         print("-----------------------------------------\n")
         while True:
             liste1 = input("Liste1'i girin: ").split(",")
             if "xxx" in liste1:
-                print("\n----------------------------------------------------------------------------------\n")
+                system("cls")
                 break
             liste2 = input("Liste2'i girin: ").split(",")
             if "xxx" in liste2:
-                print("\n----------------------------------------------------------------------------------\n")
+                system("cls")
                 break
             carpma = carpim(liste1, liste2)
             print("Sonuç: ", carpma, "\n")
             print("-----------------------------------------")
 
     if secim == 2:
-        print("\n----------------------------------------------------------------------------------\n\n-----------------------------------------")
+        system("cls")
+        print("\n-----------------------------------------")
         print("Çıkmak için herhangi bir listeye xxx yazın.")
         print("-----------------------------------------\n")
         while True:
             liste1 = input("Liste1'i girin: ").split(",")
             if "xxx" in liste1:
-                print("\n----------------------------------------------------------------------------------\n")
+                system("cls")
                 break
             liste2 = input("Liste2'i girin: ").split(",")
             if "xxx" in liste2:
-                print("\n----------------------------------------------------------------------------------\n")
+                system("cls")
                 break
             aynimi = karsilastirma(liste1,liste2)
             print(aynimi, "\n")
             print("-----------------------------------------")
-
-    
