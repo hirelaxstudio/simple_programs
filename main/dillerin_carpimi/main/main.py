@@ -23,13 +23,13 @@ while True:
         secim = int(input("\nSane ne lazım? 1'mi 2'mi: "))
     except ValueError:
         print("\n--------------------------------")
-        print("Lütfen geçerli bir sayi giriniz1.")
+        print("Lütfen geçerli bir sayi giriniz!")
         print("--------------------------------\n")
         continue
 
     if secim != 1 and secim !=2:
         print("\n--------------------------------")
-        print("Lütfen geçerli bir sayi giriniz2.")
+        print("Lütfen geçerli bir sayi giriniz!")
         print("--------------------------------\n")
         continue
 
