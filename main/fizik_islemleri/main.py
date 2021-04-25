@@ -100,13 +100,13 @@ def ecy ():
     return g*((a1*a2)/r**2)
 
 # Bir kuvveti X ve Y bileşenlerine ayırma
-def fxy (kuvvet, derece):
+def fxy ():
     global t_degerler_cos
     global t_degerler_sin
     kuvvet = input("Fxy: ")
     if kuvvet == "xxx":
         return "xxx"
-    derece = input("Fxy'nin X ekseni ile arasındaki açı: ")
+    derece = input("cos(?), sin(?): ")
     if derece == "xxx":
         return "xxx"
     try:
@@ -117,10 +117,10 @@ def fxy (kuvvet, derece):
 
     fxy_x = kuvvet*t_degerler_cos[derece]
     fxy_y = kuvvet*t_degerler_sin[derece]
-    return fxy_x, "\n", "fxy_y = ", fxy_y
+    return [fxy_x, fxy_y]
 
 # Bileşke kuvvet (R^2 = A^2 + B^2 - 2AB*cos(180-(kuvvetler aradaki açı)))
-def bv (k1, k2, derece):
+def bv ():
     global t_degerler_cos
     global t_degerler_sin
     k1 = input("k1: ")
@@ -139,7 +139,7 @@ def bv (k1, k2, derece):
     except ValueError:
         return False
     
-    R = (k1**2) + (k2**2) - (2*k1*k2*t_degerler_cos[180-derece])
+    R = ((k1**2) + (k2**2) - (2*k1*k2*t_degerler_cos[180-derece]))**(1/2)
     return R
 
 # Elektrik alan (ke*(q/r^2))
@@ -232,7 +232,7 @@ while True:
         print("\n-----------------------------------------")
         print("Çıkmak için herhangi bir seçeneğe xxx yazın.")
         print("-----------------------------------------\n")
-        print(f"Fxy'nin eksenlere göre değerini bulmak: Fxy_x = fxy x cos(a)\n{' '*40}Fxy_y = fxy x sin(a)\nNot: Kesirli sayıları yazarken virgül değil, nokta kullanın.\n")
+        print(f"Bir kuvveti X ve Y bileşenlerine ayırma: Fxy_x = fxy x cos(a)\n{' '*41}Fxy_y = fxy x sin(a)\nNot: Kesirli sayıları yazarken virgül değil, nokta kullanın.\n")
         while True:
             gecici = fxy()
             if gecici == "xxx":
@@ -241,7 +241,7 @@ while True:
             elif gecici == False:
                 print("\n-------------------------------------\nEksik veya yanlış bir değer girdiniz.\n-------------------------------------\n")
                 continue
-            print("fxy_x = ", gecici)
+            print(f"fxy_x = {gecici[0]}\nfxy_y = {gecici[1]}")
             print("-----------------------------------------")
 
     elif secim == 4:
