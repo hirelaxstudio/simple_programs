@@ -99,7 +99,7 @@ def ecy ():
     a2 = m2*(10**m2_ten)
     return g*((a1*a2)/r**2)
 
-# Fxy'nin eksenlere göre değerini bulmak
+# Bir kuvveti X ve Y bileşenlerine ayırma
 def fxy (kuvvet, derece):
     global t_degerler_cos
     global t_degerler_sin
@@ -175,7 +175,7 @@ def ea ():
 #######################################################################################
 
 while True:
-    print("1) Coulomb Yasası\n2) Evrensel kütle çekim yasası\n3) Fxy'nin eksenlere göre değerini bulmak\n4) Bileşke kuvvet\n5) Elektrik alan")
+    print("1) Coulomb Yasası\n2) Evrensel kütle çekim yasası\n3) Bir kuvveti X ve Y bileşenlerine ayırma\n4) Bileşke kuvvet\n5) Elektrik alan")
     
     try:
         secim = int(input("\nSane ne lazım: "))
