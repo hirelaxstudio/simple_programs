@@ -1,5 +1,5 @@
 ﻿# Programı Nasıl Çalıştıracağım?
-**main** adındaki klasörünün içinde **dist** adındaki klasörün içinde **main.exe** adlı exe dosyasına ulaşabilirsiniz. Bu dosyaya çift tıklayarak açabilirsiniz. programın çalışma mantığına alışmak için programı çalıştırıp denemeler yapmayı unutmayın.
+**main.exe** adlı exe dosyasına çift tıklayarak programı çalıştırabilirsiniz. programın çalışma mantığına alışmak için programı çalıştırıp denemeler yapmayı unutmayın.
 
 # Nasıl Çalışır?
 Bu programın 2 fonksiyonu vardır. İlk fonksiyonu, 2 dil'i birbiri ile çarpıp sonucu verir. Örneğin:
