@@ -1,0 +1,4 @@
+- Elektrik dipole etki eden tork (moment) ve potansiyel enerji
+  P = Q x l
+  tork = l x Q x E x sin(a) = P x E x sin(a)
+
