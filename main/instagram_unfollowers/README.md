@@ -1,0 +1,1 @@
+Instagramın sağladığı HTML formatındaki dosyadaki her şeyi kopyalayıp gerekli txt dosyalarına yapıştırın ve takip etmeyenler unfollowers.txt dosyasına kaydedilecektir.
